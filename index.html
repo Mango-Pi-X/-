@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MangoPi</title>
-    <link rel="stylesheet" href="file:///home/chronos/u-8e36dbc903cc542f2882fc21acef3b87160a0c0e/MyFiles/mangopi/style.css">
+    <link rel="stylesheet" href="mangopi.xyz/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/rDV3sQGK/splash.png">
 </head>
@@ -22,7 +22,7 @@
 </body>
    <script>
     let y = document.cookie
-    alert(y)
+    
         window.onload = function() {
             if (y =='deny') {
                 window.location.href = "https://www.google.com";
@@ -46,7 +46,6 @@
             // Blacklist the user by setting a cookie
             document.cookie = "deny; expires=Thu, 18 Dec 2032 12:00:00 UTC";
             let y = document.cookie
-            alert(y)
             
             // Redirect to another page
             window.location.href = "https://www.google.com";
