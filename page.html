@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--CODE COPYRIGHT CASSIUS W 2025-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangoPi</title>
+    <link rel="stylesheet" href="file:///home/chronos/u-8e36dbc903cc542f2882fc21acef3b87160a0c0e/MyFiles/mangopi/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/rDV3sQGK/splash.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Cassius W.</h1>
+        <img id="image" src="https://i.postimg.cc/PNV2ySTG/cat.gif" alt="Clickable Image" style="cursor: pointer;">
+        <p>About Me.</p>
+        <footer>
+            <h3><a href="mailto:admin@mangopi.xyz">Email Me</a></h3>
+            <h3><a href="https://github.com/mango-pi-x">Follow Me on GitHub</a></h3>
+        </footer>
+    </div>
+</body>
+   <script>
+    let y = document.cookie
+    alert(y)
+        window.onload = function() {
+            if (y =='deny') {
+                window.location.href = "https://www.google.com";
+            }
+        }
+
+        
+        const image = document.getElementById("image");
+
+        
+        image.addEventListener("click", firstClick);
+
+        function firstClick() {
+            alert('DO NOT POKE ME');
+            image.removeEventListener("click", firstClick);
+            image.addEventListener("click", secondClick);
+        }
+
+        function secondClick() {
+            alert('ALRIGHT, THAT IS IT YOU ARE NOT COMING BACK 	HERE!');
+            // Blacklist the user by setting a cookie
+            document.cookie = "deny; expires=Thu, 18 Dec 2032 12:00:00 UTC";
+            let y = document.cookie
+            alert(y)
+            
+            // Redirect to another page
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+</html>
