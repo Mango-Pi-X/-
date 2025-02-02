@@ -24,7 +24,7 @@
     let y = document.cookie
     
         window.onload = function() {
-            if (y =='denying') {
+            if (y =='deny') {
                 window.location.href = "https://www.google.com";
             }
         }
@@ -44,7 +44,7 @@
         function secondClick() {
             alert('ALRIGHT, THAT IS IT YOU ARE NOT COMING BACK 	HERE!');
             // Blacklist the user by setting a cookie
-            document.cookie = "denying; expires=Thu, 18 Dec 2032 12:00:00 UTC";
+            document.cookie = "deny; expires=Thu, 18 Dec 2032 12:00:00 UTC";
             let y = document.cookie
             
             // Redirect to another page
